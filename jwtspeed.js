@@ -80,9 +80,10 @@ const jwtes256 = async () => {
 
 (async()=>{
     
-    console.log(`${JSON.stringify(claim).length}`)
+    console.log(`Claim, ${JSON.stringify(claim).length}, Byte`)
+    console.log('=====RSA(2048-bit)=====')
     await jwtrsa2048();
-
+    console.log('=====ECSDA(256-bit)=====')
     await jwtes256();
 
 })()
